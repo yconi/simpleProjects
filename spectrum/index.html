@@ -33,20 +33,57 @@
                         <h1>u</h1>
                         <h1>m</h1>
                     </div>
-                    <h2>make the difference</h2>
+                    <h2>play your sound</h2>
                 </div>
             </section>
             <section class="section section2">
                 <div class="section2-content">
                     <div class="section2-box">
-                        <div class="box1 box"></div>
-                        <div class="box2 box"></div>
+                        <div class="box1 box">
+                        </div>
+                        <div class="box2 box">
+                        </div>
                         <div class="box3 box"></div>
                         <div class="box4 box"></div>
                     </div>
                 </div>
             </section>
-        </div>
+            <section class="section section3">
+                <div class="section3-content">
+                    <h1>Waveform Sculptor</h1>
+                    <canvas id="waveCanvas" width="800" height="300"></canvas>
+                    <div class="status" id="status">
+                        Click and drag to modify waveform
+                    </div>
+
+                    <div class="controls">
+                        <button id="playToggle">Play</button>
+                        <input
+                            type="range"
+                            id="frequency"
+                            min="50"
+                            max="2000"
+                            value="440"
+                        >
+                        <button id="reset">Reset</button>
+                    </div>
+
+                    <div class="presets">
+                        <button data-preset="sine">Sine</button>
+                        <button data-preset="square">Square</button>
+                        <button data-preset="sawtooth">Sawtooth</button>
+                        <button data-preset="triangle">Triangle</button>
+                        <button data-preset="random">Random</button>
+                    </div>
+
+                    <canvas
+                        id="spectrumCanvas"
+                        width="800"
+                        height="100"
+                    ></canvas>
+                </div>
+                </div>
+            </section>
         <script src="./js/script.js"></script>
     </body>
 </html>
